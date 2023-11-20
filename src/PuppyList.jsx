@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-
+import Card from 'react-bootstrap/Card';
+// import ListGroup from 'react-bootstrap/ListGroup';
 
 function PuppyList(){
 //useState
@@ -20,10 +21,16 @@ useEffect(() => {
 
     return(
         <>
-        <h2>Hi there.</h2>
+        <h2>Puppy Bowl</h2>
+        <h3>Player Roster</h3>
         {
-            puppies.map((singlePuppy) => {
-                return <li>{singlePuppy.name}</li>
+            puppies.map((singlePuppy, index) => {
+                return (
+                    <Card key={index} style={{ width: '18rem' }}>{singlePuppy.name}</Card>
+
+                )
+                
+               
             })
         }
         </>

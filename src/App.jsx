@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
+import React from 'react'
 import PuppyList from './PuppyList.jsx'
 import SinglePuppy from './SinglePuppy.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
