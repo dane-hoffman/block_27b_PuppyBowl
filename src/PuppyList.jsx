@@ -6,9 +6,11 @@ function PuppyList(){
 // useEffect(() => {
     const getPuppyList = async() => {
         const response = await fetch `https://fsa-puppy-bowl.herokuapp.com/api/2310-FSA-ET-WEB-FT-SF/players`;
+        //FETCH 'responseJson'
         const responseJson = await response.json();
-        console.log(responseJson);
-    //FETCH 'responseJson'
+        const listOfPuppyPlayers = responseJson.data.players;
+        console.log(listOfPuppyPlayers);
+
     // var = responseJson.results
     // setState(var)
 
