@@ -13,6 +13,7 @@ function PuppyList({ setMode, setSelectedPuppy }) {
         const responseJson = await response.json();
         const listOfPuppyPlayers = responseJson.data.players;
         setPuppyList(listOfPuppyPlayers);
+        console.log(listOfPuppyPlayers);
       } catch (error) {
         console.error('Error fetching data:', error);
       }

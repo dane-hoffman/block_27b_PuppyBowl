@@ -9,6 +9,7 @@ function SinglePuppy({ selectedPuppy }) {
         <Card style={{ width: '18rem' }}>
           <Card.Body>
             <Card.Title>{selectedPuppy.name}</Card.Title>
+            <Card.Img varient="top" src={selectedPuppy.imageUrl}></Card.Img>
             {/* Display other details of the selected puppy */}
             {/* Example: <Card.Text>{selectedPuppy.age}</Card.Text> */}
           </Card.Body>
