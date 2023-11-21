@@ -19,3 +19,4 @@ function SinglePuppy({ selectedPuppy }) {
 }
 
 export default SinglePuppy;
+
